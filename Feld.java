@@ -4,20 +4,38 @@ public class Feld {
 	
 	private int index = 0;
 	private int feldArt = 0;
+	private int x = 0;
+	private int y = 0;
 	private String direction = ">";
 	private ArrayList <Feld> prev = new ArrayList <>();
 	private ArrayList <Feld> next = new ArrayList <>();
 	
 	
 	
-	public Feld(int index ,int feldArt, String direction, ArrayList<Feld> prev, ArrayList<Feld> next) {
+	public Feld(int index ,int feldArt,int x , int y, String direction, ArrayList<Feld> prev, ArrayList<Feld> next) {
 		this.index = index;
 		this.feldArt = feldArt;
+		this.x = x;
+		this.y = y;
 		this.direction = direction;
 		this.prev = prev;
 		this.next = next;
 	}
-	
+
+	public int getX(){
+		return x;
+	}
+	public void setX(int x){
+		this.x = x;
+	}
+
+	public int getY(){
+		return y;
+	}
+	public void setY(int y){
+		this.y = y;
+	}
+
 	/**
 	 * @return the feldArt
 	 */

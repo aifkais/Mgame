@@ -32,8 +32,8 @@ public class MainGame {
 	}
 	
 	private void initField(ArrayList<Feld> sF) { //sF = Spielfeld, Spielfeld = Liste aus Feld
-		sF.add(new Feld(1,1,">", null, null));
-		sF.add(new Feld(1,1,">", null, null));
+		sF.add(new Feld(1,1,0,0,">" ,null, null));
+		sF.add(new Feld(1,1,0,0,">", null, null));
 		
 	}
 
